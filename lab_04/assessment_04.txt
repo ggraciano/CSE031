@@ -1,0 +1,15 @@
+1 - It fails to give the expected result because 'hello' has only been defiend to hold a maximum of 6 elements, 
+    excluding the NULL character. Thus, when 'strcat(hello,world)' runs, the output is wrong because 'hello' can only 
+    hold 6 elements plus the NULL character, which, in this case, gets overwritten, ultimately, generating the error.
+
+2 - One way to fix the bug is to initialize 'hello' with enough space to hold the elements in 'hello' and 'world' 
+    (e.g. 'hello[15]').
+
+3 - To run a program in gdb, using gcc, simply compile the program with the 'g' flag and then run 'gdb' followed by 
+    the exectuable file. C does not provide the same kind of bounds-checking on arrays that Java does because it is 
+    easier to implement, compile, and makes memory management more flexible.
+
+4 - A pro for implementing strings as dunmb arrays is that it makes memory management more flexible (e.g. one is 
+    able to keep track of the amount of memory used). A con for implementing strings as dumb arrays is that it can 
+    lead to unexpected and difficult to find errors.
+

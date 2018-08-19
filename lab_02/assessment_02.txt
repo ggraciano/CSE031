@@ -1,0 +1,19 @@
+1  - To run a program in gdb, the gcc -g option flag must be used as it generates the debug information necesaary to 
+     use gdb.
+2  - To pass command line arguements to a program when using gdb, type 'run' followed by the arguement to be passed.
+3  - To set a breakpoint in a program, type 'break' followed by the desired condition.
+4  - To set a breakpoint which only occurs when a set of conditions is true, type 'break if' followed by the desired 
+     condition. For instance, to set a breakpoint when a variable has a certain value (e.g. x = 3), type 'break if 
+     ((int)x == 3)'.
+5  - To execute the next line of C code in the program after a break, type 'next'.
+6  - To execute C code, line by line, inside the function call, type 'step'.
+7  - To continue running the program after breaking, type 'continue'.
+8  - To see the value of a variable (or even an expression) in gdb, type 'print' followed by the variable name.
+9  - To print out the value of a variable after every step, type 'display' followed by the variable name.
+10 - To print a list of all variables and their values in the current function, type 'info variables'.
+11 - To exit out of gdb, type 'quit'.
+12 - The function 'printf()' keeps on going until it finds a '\0' in memory.
+13 - The segmentation fault occurs at line 15.
+14 - To fix the line so that it works properly, reference 'input'.
+15 - 'sum' is passed by value instead of by reference. To fix this, simply pass 'sum' by reference, that is, pass the 
+     address of 'sum' to the function, whereby the input argument is a pointer that points to the said address.

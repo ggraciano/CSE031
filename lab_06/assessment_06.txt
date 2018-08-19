@@ -1,0 +1,48 @@
+1 - There are two bugs. The first is located at line 14 and the second is located at line 15.
+2 - The pointer is incremented by one byte instead of four, or a word. To fix this, change the '1' to a '4'.
+3 - Run the program one step at a time and observe what is occuring in the program when it runs, leading up to the 
+    error.
+4 - The 'source' pointer is stored in '$9' originally.
+5 - The 'dest' pointer is stored in '$10' originally.
+6 - The 'la' instruction is used to load the addresses of the 'source' and 'dest' pointers.
+7 - The loop to copy values starts at line 34 with the label '$L6'.
+8 - Instruction: addu	$8,$8,1
+    Purpose: increments the pointer by one
+    Corresponding C: k++
+
+    Instruction: sll	$3,$8,2
+    Purpose: scales the '$8' to a word offset and sets it to '$3'
+    Corresponding C: N/A
+
+    Instruction: addu	$5,$7,$9
+    Purpose: sets the address of 'source[k]', where 'k' is the current location, to '$5'
+    Corresponding C: $5 = &source[k]
+
+    Instruction: addu	$2,$3,$9
+    Purpose: sets the address of 'source[k+1], where 'k+1' is the next location, to '$2'
+    Corresponding C: $2 = &source[k+1]
+
+    Instruction: addu	$6,$7,$10
+    Purpose: sets the address of 'dest[k]', where 'k' is the current location, to '$6'
+    Corresponding C: $6 = &dest[k]
+
+    Instruction: lw	$4,0($2)
+    Purpose: loads the address at '$2', which is 'source[k+1]', to '$4'
+    Corresponding C: $4 = source[k+1]
+
+    Instruction: move	$7,$3
+    Purpose: sets '$7' to '$3'
+    Corresponding C: $7 = $3 (i.e. k++)
+
+    Instruction: lw	$3,0($5)
+    Purpose: loads the address at '$5', whihc is 'dest[k]', to '$3'
+    Corresponding C: $3 = source[k]
+
+    Instruction: sw	$3,0($6)
+    Purpose: saves the value stored in '$3' to the address at '$6'
+    Corresponding C: dest[k] = source[k]
+
+    Instruction: bne	$4,$0,$L6
+    Purpose: if the value at '$4' does not equal zero, loop (conditional statement)
+    Corresponding C: for (k=0; source[k] != 0; k++)
+

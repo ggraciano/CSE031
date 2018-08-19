@@ -1,0 +1,63 @@
+line 06 (int num;)
+
+1 - Stack memory is affected.
+2 - Memory does not gets allocated.
+3 - Memory is not stored.
+4 - The statement does not result in a memory leak.
+
+line 07 (int ptr*;):
+
+1 - Stack memory is affected.
+2 - Memory does not get allocated.
+3 - Memory is not stored.
+4 - The statement does not result in a memory leak.
+
+line 08 (int **handle;):
+
+1 - Stack memory is affected.
+2 - Memory does not get allocated.
+3 - Memory is not stored.
+4 - The statement does not result in a memory leak.
+
+line 10 (num = 14;):
+
+1 - Stack memory is affected.
+2 - Memory does not get allocated.
+3 - Memory is not stored.
+4 - The statement does not result in a memory leak.
+
+line 11 (ptr = (int *)malloc(2 * sizeof(int));):
+
+1 - Heap memory is affected.
+2 - Memory is allocated.
+3 - Memory is stored in heap.
+4 - The statement does not result in a memory leak.
+
+line 12 (handle = &ptr;):
+
+1 - Stack memory is affected.
+2 - Memory deos not get allocated.
+3 - Memory is not stored.
+4 - The statement does not result in a memory leak.
+
+line 13 (*ptr = num;):
+
+1 - Stack memory is affected.
+2 - Memory does not get allocated.
+3 - Memory is not stored.
+4 - The statement does not result in a memory leak.
+
+line 14 (ptr = &num;):
+
+1 - Stack memory is affected.
+2 - Memory is not alloacted.
+3 - Mmeory is stored.
+4 - The statement does result in a memory leak.
+
+line 15 (handle = (int **)malloc(1 * sizeof(int **));):
+
+1 - Heap memory is affected.
+2 - Memory is allocated.
+3 - Memory is not stored.
+4 - The statement does result in a memory leak.
+

@@ -1,0 +1,12 @@
+1 - A positive floating-point value x, for which x + 1.0 = x, is 16777216, or 0x4B800000 in single-precision 
+    floating-point hexadecimal format.
+
+2 - The smallest positive floating-point value x, for which x + 1.0 = x, is 16777216, or 0x4B800000 in 
+    single-precision floating-point hexadecimal format.
+
+3 - A set of floating-point numbers such that adding these numbers in a different order can yield a different value 
+    are 1.0, 1.0, and 16777216. For instance, (1.0 + 1.0) + 16777216 = 16777218, whereas 1.0 + (1.0 + 16777216) = 
+    16777216.
+
+4 - Based on the answer for question 3, floating-point arithmetic does not obey the associative rule like integers.
+

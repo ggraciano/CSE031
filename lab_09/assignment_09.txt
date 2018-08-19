@@ -1,0 +1,25 @@
+***** The new proper version of 'mystery' is embedded within 'mystery.s'. *****
+
+1 - For '-1', two characters, that is, '-' and '1' are being printed out, whereas for '1', only one character is 
+    being printed out, namely, '1'.
+
+2 - To handle the negative numbers in terms of postive numbers, simply reverse them by performing the 2's complement 
+    of the number, that is, make use of the 'not' instruction and add one to it. From there, to attain the nummbers 
+    into characters, divide the number by ten and store the remainder until the number is zero. From there, then add 
+    the numbers attained to character '0'.
+
+3 - The c equivalent code is as follows:
+
+    int mystery(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        else {
+            return 2 * mystery(n - 1) + 1;
+        }
+    }
+
+4 - mystery(7) = 127
+
+5 - mystery(32) = -1
+

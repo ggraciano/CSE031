@@ -1,0 +1,12 @@
+1 - The .data directives consist of the values to be used, the .word is the size of the data, and .text are the 
+    instructions, or code.
+2 - To set a breakpoint in MARS, on the 'Execute' tab, check the box of the desired line to set a breakpoint under the 
+    'bkpt' column. MARS displays 'Go: executions paused at breakpoint; fib.s'.
+3 - To run the code. hit 'F5' or 'Run the current program'. To step throught the code, hit 'F7' or 'Run one step at a 
+    time'.
+4 - The registers are displayed on the right in the 'Registers' tab. To modify the value of a register, modify the 
+    value under the 'value' column.
+5 - 'n' is stored in the intruction address 0x00400008 according to the text segment in MARS. The 13th fib number is 
+    233.
+6 - The 'syscall' instruction calls an external function to return what is in $v0 to end the program.
+

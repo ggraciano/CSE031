@@ -1,0 +1,6 @@
+1 - Buggy swap would seem to work correctlty if there is already something on the stack whose address has already 
+    been stored in the stack. As such, the program would seem to be running smoothly, but would otherwise fail.
+
+2 - To guarantee the program from crashing from what is in 'proc', create an invalid address and place it on the 
+    the stack. As such, the program would crash since there is an invalid address being accessed.
+

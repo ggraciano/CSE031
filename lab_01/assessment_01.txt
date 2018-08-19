@@ -1,0 +1,12 @@
+1  - The -c flag, in gcc, tells the compiler to supress linking and create an object file.
+2  - The -o flag, in gcc, tells the compiler that you want to give the executable its own name.
+3  - gdb output0
+4  - break main
+5  - run
+6  - step
+
+7  - The size of an unsigned int, in bits, is 32.
+8  - The size of a long long int, in bits, is 64.
+9  - The size of a signed int is the same as an unsigned int.
+10 - The output is -2147483648 because two's compliment representation is the same as its negation.
+

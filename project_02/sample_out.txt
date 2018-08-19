@@ -1,0 +1,104 @@
+Enter size of list (between 1 and 25): 9
+Enter one list element: 
+2
+Enter one list element: 
+4
+Enter one list element: 
+3
+Enter one list element: 
+1
+Enter one list element: 
+7
+Enter one list element: 
+1
+Enter one list element: 
+9
+Enter one list element: 
+7
+Enter one list element: 
+6
+Content of original list: 2 4 3 1 7 1 9 7 6 
+Content of sorted list: 1 1 2 3 4 6 7 7 9 
+Enter a key to search for: 4
+Key found!
+-- program is finished running --
+
+Enter size of list (between 1 and 25): 7
+Enter one list element: 
+7
+Enter one list element: 
+7
+Enter one list element: 
+5
+Enter one list element: 
+8
+Enter one list element: 
+3
+Enter one list element: 
+9
+Enter one list element: 
+8
+Content of original list: 7 7 5 8 3 9 8 
+Content of sorted list: 3 5 7 7 8 8 9 
+Enter a key to search for: 7
+Key found!
+-- program is finished running --
+
+Enter size of list (between 1 and 25): 5
+Enter one list element: 
+4
+Enter one list element: 
+4
+Enter one list element: 
+9
+Enter one list element: 
+8
+Enter one list element: 
+1
+Content of original list: 4 4 9 8 1 
+Content of sorted list: 1 4 4 8 9 
+Enter a key to search for: 4
+Key found!
+-- program is finished running --
+
+Enter size of list (between 1 and 25): 6
+Enter one list element: 
+1
+Enter one list element: 
+9
+Enter one list element: 
+7
+Enter one list element: 
+5
+Enter one list element: 
+3
+Enter one list element: 
+5
+Content of original list: 1 9 7 5 3 5 
+Content of sorted list: 1 3 5 5 7 9 
+Enter a key to search for: 3
+Key found!
+-- program is finished running --
+
+Enter size of list (between 1 and 25): 8
+Enter one list element: 
+3
+Enter one list element: 
+5
+Enter one list element: 
+4
+Enter one list element: 
+8
+Enter one list element: 
+0
+Enter one list element: 
+3
+Enter one list element: 
+1
+Enter one list element: 
+45
+Content of original list: 3 5 4 8 0 3 1 45 
+Content of sorted list: 0 1 3 3 4 5 8 45 
+Enter a key to search for: 6
+Key not found!
+-- program is finished running --
